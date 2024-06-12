@@ -57,10 +57,10 @@ Set the Verify Token from webhook.js
 
 Subscribe to the following Webhook events: messages and messaging_postbacks.
 
-Project Structure
-webhook.js: Main server file that handles Facebook webhook verification and message processing.
-package.json: Project metadata and dependencies.
-Code Overview
+# Project Structure
+1. webhook.js: Main server file that handles Facebook webhook verification and message processing.
+2. package.json: Project metadata and dependencies.
+# Code Overview
 The server listens on port 4000 or the port defined in the environment variable PORT.
 It handles Facebook validation in the /webhook GET route.
 It processes incoming messages in the /webhook POST route and sends a response using the sendMessage function.
