@@ -18,7 +18,7 @@ Follow these instructions to set up and run the project on your local machine.
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/facebook-messenger-ai-bot.git
+   git clone https://github.com/hillaryserel/facebook-messenger-ai-bot.git
    cd facebook-messenger-ai-bot
 
 # Install the dependencies:
@@ -31,7 +31,7 @@ Create a .env file in the root directory and add your Facebook Page Access Token
 ```sh
 
 PAGE_ACCESS_TOKEN=your_page_access_token
-VERIFY_TOKEN=ABCDEFGHIJKLMNOPQRSTUVWXYZ
+VERIFY_TOKEN=your_token
 ```
 # Running the Server
 ## Start the Node.js server:
@@ -68,7 +68,7 @@ Example of Handling Messages
 The sendMessage function logs the received message and sends a response back to the user.
 
 JavaScript
-
+```sh
 function sendMessage(event) {
   const senderId = event.sender.id;
   const messageText = event.message.text;
@@ -85,13 +85,14 @@ function sendMessage(event) {
 function sendTextMessage(recipientId, message) {
   console.log(`Sending message to ${recipientId}: ${JSON.stringify(message)}`);
 }
-AI-generated code. Review and use carefully. More info on FAQ.
-Contributing
+```
+
+# Contributing
 Feel free to contribute to this project by submitting issues or pull requests.
 
-License
+# License
 This project is licensed under the MIT License.
 
-Acknowledgements
-Facebook Messenger Platform Documentation
-Express.js Documentation
+# Acknowledgements
+1. Facebook Messenger Platform Documentation
+2. Express.js Documentation
